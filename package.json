@@ -1,0 +1,19 @@
+{
+  "name": "anmeldesystem-backend-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebamomann/anmeldesystem-backend-mock.git"
+  },
+  "author": "Seba Momann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebamomann/anmeldesystem-backend-mock/issues"
+  },
+  "homepage": "https://github.com/sebamomann/anmeldesystem-backend-mock#readme"
+}
