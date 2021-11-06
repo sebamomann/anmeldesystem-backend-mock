@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "start:watch": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/sebamomann/anmeldesystem-backend-mock/issues"
   },
-  "homepage": "https://github.com/sebamomann/anmeldesystem-backend-mock#readme"
+  "homepage": "https://github.com/sebamomann/anmeldesystem-backend-mock#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.11"
+  }
 }

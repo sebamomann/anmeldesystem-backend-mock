@@ -1,0 +1,20 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "403",
+        "data": {
+          "code": "INSUFFICIENT_PERMISSIONS",
+          "message": "Missing permissions to execute request",
+          "data": {
+            "attribute": "id",
+            "in": "path",
+            "value": "775d5788-ebc9-4ab5-ada3-a30b9b02ac4a",
+            "message": "Specified enrollment is not in your ownership. You are also not permitted by being a manager of the related appointment."
+          }
+        }
+      }
+    ]
+  }
+]

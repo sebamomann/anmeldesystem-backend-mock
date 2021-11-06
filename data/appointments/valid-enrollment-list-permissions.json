@@ -1,0 +1,54 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": ["CREATOR"],
+          "id": "6fa6a324-a49f-44ff-b17d-d1f425b50ffe",
+          "title": "Appointment - Enrollment-List - Permissions",
+          "description": "My cool description",
+          "link": "valid-enrollment-list-permissions",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": false,
+          "driverAddition": false,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          },
+          "enrollments": [
+            {
+              "id": "fa33ed23-e8f5-46f4-a734-dbff28372810",
+              "comment": "Comment",
+              "name": "Unknown Enrollment",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "775d5788-ebc9-4ab5-ada3-a30b9b02ac4a",
+              "comment": "Comment",
+              "name": "Unknown Enrollment - Invalid permissions",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "49abf491-b8e3-40bf-8e68-b88b06b279ca",
+              "comment": "Comment",
+              "name": "Unknown Enrollment - Token",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "1b1d3fa5-6817-4544-abeb-98fd7da3ffba",
+              "comment": "Comment",
+              "name": "Unknown Enrollment - Token - Invalid permissions",
+              "iat": "2021-01-01 05:02:23"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

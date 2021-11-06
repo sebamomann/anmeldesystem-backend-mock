@@ -1,0 +1,65 @@
+[
+  {
+    "method": "PUT",
+    "mocks": [
+      {
+        "headers": {
+          "x-enrollment-token": "valid-enrollment-edit-token"
+        },
+        "body": {
+          "comment": "Comment One - Updated",
+          "id": "7af393c1-bdc5-4245-86f0-9fec44133775"
+        },
+        "status": "204"
+      },
+      {
+        "headers": {
+          "x-enrollment-token": "invalid-enrollment-edit-token"
+        },
+        "body": {
+          "comment": "Comment One - Updated - Invalid permissions",
+          "id": "7af393c1-bdc5-4245-86f0-9fec44133775"
+        },
+        "status": "403",
+        "data": {
+          "code": "INSUFFICIENT_PERMISSIONS",
+          "message": "Following values are duplicates and can not be used",
+          "data": [
+            {
+              "attribute": "id",
+              "in": "path",
+              "value": "7af393c1-bdc5-4245-86f0-9fec44133775",
+              "message": "Specified enrollment is not in your ownership. You are also not permitted by being a manager of the related appointment."
+            }
+          ]
+        }
+      },
+      {
+        "body": {
+          "comment": "Comment One - Updated - Logged in",
+          "id": "7af393c1-bdc5-4245-86f0-9fec44133775"
+        },
+        "status": "204"
+      },
+      {
+        "body": {
+          "comment": "Comment One - Updated - Logged in - Invalid permissions",
+          "id": "7af393c1-bdc5-4245-86f0-9fec44133775"
+        },
+        "status": "403",
+        "data": {
+          "code": "INSUFFICIENT_PERMISSIONS",
+          "message": "Following values are duplicates and can not be used",
+          "data": [
+            {
+              "attribute": "id",
+              "in": "path",
+              "value": "7af393c1-bdc5-4245-86f0-9fec44133775",
+              "message": "Specified enrollment is not in your ownership. You are also not permitted by being a manager of the related appointment."
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

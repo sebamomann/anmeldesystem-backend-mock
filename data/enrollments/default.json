@@ -1,0 +1,276 @@
+[
+  {
+    "method": "POST",
+    "mocks": [
+      {
+        "body": {
+          "name": "Unknown Enrollment",
+          "comment": "Unknown Enrollment Comment",
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-unknown&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-unknown"
+          }
+        },
+        "status": "201",
+        "data": {
+          "id": "38d6773b-9ce9-4e4a-87fe-bf9719c455ad",
+          "token": "mytoken"
+        }
+      },
+      {
+        "body": {
+          "name": "Unknown Enrollment",
+          "comment": "Unknown Enrollment Comment - Mail - Already enrolled",
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-unknown&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-unknown"
+          }
+        },
+        "status": "409",
+        "data": {
+          "code": "DUPLICATE_VALUES",
+          "message": "Provided values are already in use",
+          "data": [
+            {
+              "attribute": "name",
+              "in": "body",
+              "value": "Unknown Enrollment",
+              "message": "Enrollment with specified name already existing."
+            }
+          ]
+        }
+      },
+      {
+        "body": {
+          "comment": "Unknown Enrollment Comment - Login",
+          "selfEnrollment": true,
+          "domain": "localhost/enrollment?a=valid-enrollments-create-unknown&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-unknown"
+          }
+        },
+        "status": "201",
+        "data": {
+          "id": "7980bede-58bf-4f0e-960c-125c48563e5a"
+        }
+      },
+      {
+        "body": {
+          "comment": "User Enrollment Comment - Self enrollment",
+          "selfEnrollment": true,
+          "domain": "localhost/enrollment?a=valid-enrollments-create-user&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-user"
+          }
+        },
+        "status": "201",
+        "data": {
+          "id": "7980bede-58bf-4f0e-960c-125c48563e5a"
+        }
+      },
+      {
+        "body": {
+          "comment": "User Enrollment Comment - Self enrollment - Already enrolled",
+          "selfEnrollment": true,
+          "domain": "localhost/enrollment?a=valid-enrollments-create-user&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-user"
+          }
+        },
+        "status": "409",
+        "data": {
+          "code": "DUPLICATE_VALUES",
+          "message": "Provided values are already in use",
+          "data": [
+            {
+              "object": "user",
+              "attribute": "sub",
+              "in": "authorization-header",
+              "value": "bcf27563-e7b0-4334-ab91-d35bbb5e63f2",
+              "message": "Authenticated user already enrolled"
+            }
+          ]
+        }
+      },
+      {
+        "body": {
+          "name": "User Enrollment - Foreign enrollment",
+          "comment": "User Enrollment Comment",
+          "selfEnrollment": false,
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-user&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-user"
+          }
+        },
+        "status": "201",
+        "data": {
+          "id": "903a9705-3da7-45ef-b062-6fc7292db259",
+          "token": "mytoken"
+        }
+      },
+      {
+        "body": {
+          "name": "User Enrollment - Foreign enrollment - Already enrolled",
+          "comment": "User Enrollment Comment",
+          "selfEnrollment": false,
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-user&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-user"
+          }
+        },
+        "status": "409",
+        "data": {
+          "code": "DUPLICATE_VALUES",
+          "message": "Provided values are already in use",
+          "data": [
+            {
+              "attribute": "name",
+              "in": "body",
+              "value": "User Enrollment - Foreign enrollment - Already enrolled",
+              "message": "Enrollment with specified name already existing."
+            }
+          ]
+        }
+      },
+
+      {
+        "body": {
+          "additions": [
+            { "id": "28a03edc-cde5-4ce3-bb4c-04dcbe85f116" },
+            { "id": "16a7edc6-c403-446f-89a1-f1a1d61f9ec9" }
+          ],
+          "name": "Unknown Enrollment - Additions",
+          "comment": "Unknown Enrollment Comment",
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-additions&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-additions"
+          }
+        },
+        "status": "201",
+        "data": {
+          "id": "64c3ead0-4d12-452b-94b7-20e0ec064e17",
+          "token": "mytoken"
+        }
+      },
+      {
+        "body": {
+          "additions": [
+            { "id": "28a03edc-cde5-4ce3-bb4c-04dcbe85f116" },
+            { "id": "16a7edc6-c403-446f-89a1-f1a1d61f9ec9" }
+          ],
+          "name": "Unknown Enrollment - Additions - Already enrolled",
+          "comment": "Unknown Enrollment Comment",
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-additions&e={{0}}&t={{1}}",
+          "appointment": {
+            "link": "valid-enrollments-create-additions"
+          }
+        },
+        "status": "409",
+        "data": {
+          "code": "DUPLICATE_VALUES",
+          "message": "Provided values are already in use",
+          "data": [
+            {
+              "attribute": "name",
+              "in": "body",
+              "value": "Unknown Enrollment - Additions - Already enrolled",
+              "message": "Enrollment with specified name already existing."
+            }
+          ]
+        }
+      },
+
+      {
+        "body": {
+          "name": "Unknown Enrollment - Driver and Passenger - Passenger",
+          "comment": "Unknown Enrollment Comment",
+          "passenger": {
+            "requirement": 2
+          },
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-driverandpassenger&e={{0}}&t={{1}}",
+          "appointment": { "link": "valid-enrollments-create-driverandpassenger" }
+        },
+        "status": "201",
+        "data": {
+          "id": "9dfc1e2c-73a8-4de9-a49f-c610e92cfe54",
+          "token": "mytoken"
+        }
+      },
+      {
+        "body": {
+          "name": "Unknown Enrollment - Driver and Passenger - Passenger - Already enrolled",
+          "comment": "Unknown Enrollment Comment",
+          "passenger": { "requirement": 2 },
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-driverandpassenger&e={{0}}&t={{1}}",
+          "appointment": { "link": "valid-enrollments-create-driverandpassenger" }
+        },
+        "status": "409",
+        "data": {
+          "code": "DUPLICATE_VALUES",
+          "message": "Provided values are already in use",
+          "data": [
+            {
+              "attribute": "name",
+              "in": "body",
+              "value": "Unknown Enrollment - Driver - Already enrolled",
+              "message": "Enrollment with specified name already existing."
+            }
+          ]
+        }
+      },
+
+      {
+        "body": {
+          "name": "Unknown Enrollment - Driver and Passenger - Driver",
+          "comment": "Unknown Enrollment Comment",
+          "driver": {
+            "service": 3,
+            "seats": 4
+          },
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-driverandpassenger&e={{0}}&t={{1}}",
+          "appointment": { "link": "valid-enrollments-create-driverandpassenger" }
+        },
+        "status": "201",
+        "data": {
+          "id": "8ef1512c-ae8a-4b0c-9b4e-7b5819a1906c",
+          "token": "mytoken"
+        }
+      },
+      {
+        "body": {
+          "name": "Unknown Enrollment - Driver and Passenger - Driver - Already enrolled",
+          "comment": "Unknown Enrollment Comment",
+          "driver": {
+            "service": 3,
+            "seats": 4
+          },
+          "editMail": "mail@example.com",
+          "domain": "localhost/enrollment?a=valid-enrollments-create-driverandpassenger&e={{0}}&t={{1}}",
+          "appointment": { "link": "valid-enrollments-create-driverandpassenger" }
+        },
+        "status": "409",
+        "data": {
+          "code": "DUPLICATE_VALUES",
+          "message": "Provided values are already in use",
+          "data": [
+            {
+              "attribute": "name",
+              "in": "body",
+              "value": "Unknown Enrollment - Driver - Already enrolled",
+              "message": "Enrollment with specified name already existing."
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

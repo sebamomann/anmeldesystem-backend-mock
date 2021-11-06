@@ -1,0 +1,70 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": [
+            "CREATOR"
+          ],
+          "id": "5163f213-c168-408c-ad63-4faa7ec61ae5",
+          "title": "Appointment",
+          "description": "My cool description",
+          "link": "valid",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": false,
+          "driverAddition": false,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          },
+          "enrollments": [
+            {
+              "id": "0614b2e5-d283-41fe-bc54-ce2527bfd308",
+              "comment": "Comment One",
+              "creator": {
+                "name": "User Enrollment One",
+                "username": "userenrollmentone"
+              },
+              "iat": "2021-01-01 05:01:23"
+            },
+            {
+              "id": "4190a4d4-b8a1-4843-9717-a04ffa7b2dbb",
+              "comment": "Comment Two - Permission denied",
+              "creator": {
+                "name": "User Enrollment Two",
+                "username": "userenrollmenttwo"
+              },
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "95f745fa-98cd-44b4-abfe-c7658f9196fd",
+              "comment": "Comment Three - Already Enrolled",
+              "creator": {
+                "name": "GJM-TestUser-Protractor General-EnrollmentCreator-3",
+                "username": "gjm-test-protractor-general-enrollmentcreator-user-3"
+              },
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "c7a18228-9dc5-46f0-9366-def497121ddc",
+              "comment": "Comment One",
+              "name": "Unknown Enrollment One",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "dd5837e5-1f1d-4a2d-85e1-7dcb77e8ab2a",
+              "name": "Unknown Enrollment Two",
+              "iat": "2021-01-01 05:02:23"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

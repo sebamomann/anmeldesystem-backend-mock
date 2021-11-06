@@ -1,0 +1,28 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": ["CREATOR"],
+          "id": "6b3e571f-d359-4704-968b-36b7c713490c",
+          "title": "Appointment - Enrollment-List - Empty",
+          "description": "My cool description",
+          "link": "valid-enrollment-list-empty",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": false,
+          "driverAddition": false,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          }
+        }
+      }
+    ]
+  }
+]

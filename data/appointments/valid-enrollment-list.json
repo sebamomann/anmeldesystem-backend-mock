@@ -1,0 +1,49 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": ["CREATOR"],
+          "id": "6fa6a324-a49f-44ff-b17d-d1f425b50ffe",
+          "title": "Appointment - Enrollment-List",
+          "description": "My cool description",
+          "link": "valid-enrollment-list",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": false,
+          "driverAddition": false,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          },
+          "enrollments": [
+            {
+              "id": "c17701cb-3efd-4824-b516-6763f9c60795",
+              "creator": {
+                "name": "User Enrollment",
+                "username": "userenrollment"
+              },
+              "iat": "2021-01-01 05:01:23"
+            },
+            {
+              "id": "3cb062fa-9fac-4836-8160-d0af1603dcaa",
+              "comment": "Comment",
+              "name": "Unknown Enrollment",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "93d7dffd-2e35-4419-880b-9a36c8ca8306",
+              "name": "Unknown Enrollment - No comment",
+              "iat": "2021-01-01 05:02:23"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

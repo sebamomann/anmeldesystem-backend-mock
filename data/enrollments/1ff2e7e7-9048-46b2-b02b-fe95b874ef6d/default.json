@@ -1,0 +1,103 @@
+[
+  {
+    "method": "PUT",
+    "mocks": [
+      {
+        "headers": {
+          "x-enrollment-token": "valid-enrollment-edit-token"
+        },
+        "body": {
+          "name": "Unknown Enrollment One - Updated",
+          "comment": "Comment One",
+          "id": "1ff2e7e7-9048-46b2-b02b-fe95b874ef6d"
+        },
+        "status": "204"
+      },
+      {
+        "headers": {
+          "x-enrollment-token": "valid-enrollment-edit-token"
+        },
+        "body": {
+          "name": "Unknown Enrollment One",
+          "comment": "Comment One - Updated",
+          "id": "1ff2e7e7-9048-46b2-b02b-fe95b874ef6d"
+        },
+        "status": "204"
+      },
+      {
+        "headers": {
+          "x-enrollment-token": "valid-enrollment-edit-token"
+        },
+        "body": {
+          "name": "Unknown Enrollment One - Name in use",
+          "comment": "Comment One",
+          "id": "1ff2e7e7-9048-46b2-b02b-fe95b874ef6d"
+        },
+        "status": "400",
+        "data": {
+          "code": "DUPLICATE_ENTRY",
+          "message": "Following values are duplicates and can not be used",
+          "data": [
+            {
+              "attribute": "name",
+              "in": "body",
+              "value": "Unknown Enrollment One - Name in use",
+              "message": "The specified name is already used by another enrollment. A person can only be enrolled once."
+            }
+          ]
+        }
+      },
+      {
+        "headers": {
+          "x-enrollment-token": "invalid-enrollment-edit-token"
+        },
+        "body": {
+          "name": "Unknown Enrollment One - Updated",
+          "comment": "Comment One",
+          "id": "1ff2e7e7-9048-46b2-b02b-fe95b874ef6d"
+        },
+        "status": "403",
+        "data": {
+          "code": "INSUFFICIENT_PERMISSIONS",
+          "message": "Following values are duplicates and can not be used",
+          "data": [
+            {
+              "attribute": "id",
+              "in": "path",
+              "value": "1ff2e7e7-9048-46b2-b02b-fe95b874ef6d",
+              "message": "Specified enrollment is not in your ownership. You are also not permitted by being a manager of the related appointment."
+            }
+          ]
+        }
+      },
+      {
+        "body": {
+          "name": "Unknown Enrollment One - Updated - Logged in",
+          "comment": "Comment One",
+          "id": "1ff2e7e7-9048-46b2-b02b-fe95b874ef6d"
+        },
+        "status": "204"
+      },
+      {
+        "body": {
+          "name": "Unknown Enrollment One - Updated - Logged in - Invalid permissions",
+          "comment": "Comment One",
+          "id": "1ff2e7e7-9048-46b2-b02b-fe95b874ef6d"
+        },
+        "status": "403",
+        "data": {
+          "code": "INSUFFICIENT_PERMISSIONS",
+          "message": "Following values are duplicates and can not be used",
+          "data": [
+            {
+              "attribute": "id",
+              "in": "path",
+              "value": "1ff2e7e7-9048-46b2-b02b-fe95b874ef6d",
+              "message": "Specified enrollment is not in your ownership. You are also not permitted by being a manager of the related appointment."
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

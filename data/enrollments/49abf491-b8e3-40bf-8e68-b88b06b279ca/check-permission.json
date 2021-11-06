@@ -1,0 +1,14 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "headers": {
+          "x-enrollment-token": "valid-enrollment-edit-token"
+        },
+        "status": "204",
+        "data": {}
+      }
+    ]
+  }
+]

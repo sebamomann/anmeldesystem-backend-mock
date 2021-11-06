@@ -1,0 +1,50 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": ["CREATOR"],
+          "id": "56b14ef0-6523-45c0-96ad-94297574d19e",
+          "title": "Appointment - Enrollments - Create - Additions",
+          "description": "My cool description",
+          "link": "valid-enrollments-create-additions",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": false,
+          "driverAddition": false,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          },
+          "additions": [
+            {
+              "id": "28a03edc-cde5-4ce3-bb4c-04dcbe85f116",
+              "name": "addition-1",
+              "order": 0
+            },
+            {
+              "id": "74b5eae6-1e5f-47eb-bf46-57f292f56e44",
+              "name": "addition-2",
+              "order": 1
+            },
+            {
+              "id": "16a7edc6-c403-446f-89a1-f1a1d61f9ec9",
+              "name": "addition-3",
+              "order": 2
+            },
+            {
+              "id": "ee59654b-b6cf-4ea2-81a2-8d097a54bd44",
+              "name": "addition-4",
+              "order": 3
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

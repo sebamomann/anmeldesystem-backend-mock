@@ -1,0 +1,35 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": ["CREATOR"],
+          "id": "b49e7a13-80a8-4ba1-921f-917c5a7d0126",
+          "title": "Appointment - File",
+          "description": "My cool description",
+          "link": "valid-files",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": false,
+          "driverAddition": true,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          },
+          "files": [
+            {
+              "name": "testfile-1.pdf",
+              "url": "https://localhost:3000/files/2e57b350-78fa-472b-b42f-b1de84dac157",
+              "id": "2e57b350-78fa-472b-b42f-b1de84dac157"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

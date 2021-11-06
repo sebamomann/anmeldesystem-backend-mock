@@ -1,0 +1,23 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "headers": {
+          "x-enrollment-token": "valid-enrollment-edit-token"
+        },
+        "status": "403",
+        "data": {
+          "code": "INSUFFICIENT_PERMISSIONS",
+          "message": "Missing permissions to execute request",
+          "data": {
+            "attribute": "id",
+            "in": "path",
+            "value": "1b1d3fa5-6817-4544-abeb-98fd7da3ffba",
+            "message": "Specified enrollment is not in your ownership. You are also not permitted by being a manager of the related appointment."
+          }
+        }
+      }
+    ]
+  }
+]

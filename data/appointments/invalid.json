@@ -1,0 +1,20 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "404",
+        "data": {
+          "code": "NOT_FOUND",
+          "message": "Requested resource could not be located",
+          "data": {
+            "attribute": "link",
+            "in": "path",
+            "value": "invalid",
+            "message": "Specified appointment does not exist"
+          }
+        }
+      }
+    ]
+  }
+]
