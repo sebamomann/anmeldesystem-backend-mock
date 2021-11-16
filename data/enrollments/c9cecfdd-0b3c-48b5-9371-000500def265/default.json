@@ -1,0 +1,14 @@
+[
+  {
+    "method": "PUT",
+    "mocks": [
+      {
+        "body": {
+          "additions": [{ "id": "e203fc82-a391-4062-81f7-00d4db95ecae" }],
+          "id": "c9cecfdd-0b3c-48b5-9371-000500def265"
+        },
+        "status": "204"
+      }
+    ]
+  }
+]

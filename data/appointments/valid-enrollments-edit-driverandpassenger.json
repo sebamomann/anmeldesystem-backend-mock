@@ -1,0 +1,47 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": ["CREATOR"],
+          "id": "39cdc210-54d5-42de-9f0e-ef55daa44b22",
+          "title": "Appointment - Enrollments - Edit - Driver and Passenger",
+          "description": "My cool description",
+          "link": "valid-enrollments-edit-driverandpassenger",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": false,
+          "driverAddition": true,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          },
+          "enrollments": [
+            {
+              "id": "715d6333-13bd-4b50-9a17-515151845fd5",
+              "name": "Unknown Enrollment - Driver",
+              "iat": "2021-01-01 05:02:23",
+              "driver": {
+                "seats": 4,
+                "service": 2
+              }
+            },
+            {
+              "id": "cabd942e-d21e-4b98-89d5-c9aeea1334f7",
+              "name": "Unknown Enrollment - Passenger",
+              "iat": "2021-01-01 05:02:23",
+              "passenger": {
+                "requirement": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

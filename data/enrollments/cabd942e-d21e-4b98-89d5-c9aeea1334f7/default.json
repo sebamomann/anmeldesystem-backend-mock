@@ -1,0 +1,21 @@
+[
+  {
+    "method": "PUT",
+    "mocks": [
+      {
+        "body": {
+          "id": "cabd942e-d21e-4b98-89d5-c9aeea1334f7",
+          "passenger": { "requirement": 2 }
+        },
+        "status": "204"
+      },
+      {
+        "body": {
+          "id": "cabd942e-d21e-4b98-89d5-c9aeea1334f7",
+          "driver": { "service": 3, "seats": 1 }
+        },
+        "status": "204"
+      }
+    ]
+  }
+]
