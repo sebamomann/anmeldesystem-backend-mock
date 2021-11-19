@@ -1,0 +1,95 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": ["CREATOR"],
+          "id": "62a09348-f6fe-4d57-97a9-2c3cc1e79d72",
+          "title": "Appointment - Enrollment-List - Additions",
+          "description": "My cool description",
+          "link": "valid-enrollment-list-additions",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": false,
+          "driverAddition": false,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          },
+          "additions": [
+            {
+              "id": "00754826-5373-4148-b5a5-70f20dc613ac",
+              "name": "addition-1",
+              "order": 0
+            },
+            {
+              "id": "f5bcc215-96e6-4d05-a6f7-a10c6981d0d0",
+              "name": "addition-2",
+              "order": 1
+            },
+            {
+              "id": "c1bac5d9-eba7-4a6f-b8ed-9b90f22a2778",
+              "name": "addition-3",
+              "order": 2
+            },
+            {
+              "id": "b7691c10-1d03-4216-8fcf-bea4aae55127",
+              "name": "addition-4",
+              "order": 3
+            }
+          ],
+          "enrollments": [
+            {
+              "id": "51ae537f-4569-444a-90b4-3c76267662e6",
+              "name": "Unknown Enrollment - All additions",
+              "iat": "2021-01-01 05:02:23",
+              "additions": [
+                {
+                  "id": "00754826-5373-4148-b5a5-70f20dc613ac",
+                  "name": "addition-1"
+                },
+                {
+                  "id": "f5bcc215-96e6-4d05-a6f7-a10c6981d0d0",
+                  "name": "addition-2"
+                },
+                {
+                  "id": "c1bac5d9-eba7-4a6f-b8ed-9b90f22a2778",
+                  "name": "addition-3"
+                },
+                {
+                  "id": "b7691c10-1d03-4216-8fcf-bea4aae55127",
+                  "name": "addition-4"
+                }
+              ]
+            },
+            {
+              "id": "ede5e52a-3e4f-46ab-af67-22df50a04014",
+              "name": "Unknown Enrollment - Mixed additions",
+              "iat": "2021-01-01 05:02:23",
+              "additions": [
+                {
+                  "id": "00754826-5373-4148-b5a5-70f20dc613ac",
+                  "name": "addition-1"
+                },
+                {
+                  "id": "f5bcc215-96e6-4d05-a6f7-a10c6981d0d0",
+                  "name": "addition-2"
+                }
+              ]
+            },
+            {
+              "id": "682679e5-5cc7-4a11-b7b0-1a5fbb5af03f",
+              "name": "Unknown Enrollment - No additions",
+              "iat": "2021-01-01 05:02:23"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "method": "GET",
+    "mocks": [
+      {
+        "status": "200",
+        "data": {
+          "relations": ["CREATOR"],
+          "id": "72cc9c71-7efe-40e7-b1c5-18a1dbb64449",
+          "title": "Appointment - Enrollment-List - Hidden - Enrollments",
+          "description": "My cool description",
+          "link": "valid-enrollment-list-hidden-enrollments",
+          "location": "My Location",
+          "date": "2021-03-01T09:05:23.000Z",
+          "deadline": "2021-01-01T19:05:23.000Z",
+          "hidden": true,
+          "driverAddition": false,
+          "iat": "2021-03-14T19:05:23.000Z",
+          "lud": "2021-03-14T19:05:23.000Z",
+          "creator": {
+            "name": "User Name",
+            "username": "username"
+          },
+          "enrollments": [
+            {
+              "id": "7fd857f9-ffab-4965-9aa3-5a1de08f5f74",
+              "name": "Unknown Enrollment One",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "b2ea28a1-86f0-4732-b1db-4874a6cf212c",
+              "name": "Unknown Enrollment Two",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "d2ef0614-0818-4b58-b80c-a86504eb07f1",
+              "name": "Unknown Enrollment Three",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "d494e8d8-3a7b-4dff-92e6-e6f610a7fb80",
+              "name": "Unknown Enrollment Four",
+              "iat": "2021-01-01 05:02:23"
+            },
+            {
+              "id": "b7b153f0-16ee-47c9-a3ad-2ed060b3b79d",
+              "name": "Unknown Enrollment - Five",
+              "iat": "2021-01-01 05:02:23"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
